@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Cluster Results</title>
+</head>
+<body>
+    <h1>Cities to visit near {{ input_city }} are : </h1>
+    <ul>
+        {% for city in similar_cities %}
+            <li>{{ city }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back</a>
+</body>
+</html>
